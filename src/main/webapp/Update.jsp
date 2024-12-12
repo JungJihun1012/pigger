@@ -49,7 +49,7 @@ UpdateDTO updatedto = updatedao.getDataByNoticeNo(notice_no);
 					%>
 				</div>
 				<div class="btn_container">
-					<button class="negative">수정</button>
+					<button class="positive">수정</button>
 					<button class="close">
 						<a href="./Main.jsp">닫기</a>
 					</button>

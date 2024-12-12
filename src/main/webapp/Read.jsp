@@ -12,7 +12,7 @@ UpdateDTO updatedto = updatedao.getDataByNoticeNo(notice_no);
 %>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<title><%=updatedto.getNotice_no()%></title>
+<title><%=updatedto.getName()%>님의 '<%=updatedto.getTitle()%>'</title>
 </head>
 <body>
 	<div class="header">
@@ -43,7 +43,7 @@ UpdateDTO updatedto = updatedao.getDataByNoticeNo(notice_no);
 				}
 				%>
 			</div>
-			<div class="close_contianer">
+			<div class="btn_container">
 				<button class="close">
 					<a href="./Main.jsp">닫기</a>
 				</button>
