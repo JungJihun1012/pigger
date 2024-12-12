@@ -4,32 +4,30 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link href="./css/Create.css" rel="stylesheet" type="text/css">
-<title>추가하기</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>게시글 작성</title>
 </head>
 <body>
 	<form action="CreateAction.jsp" method="post">
+		<div class="header">
+			<h1>게시글 작성</h1>
+		</div>
+		<hr>
 		<div class="container">
-			<div class="header">
-				<h1>게시판 - 추가하기</h1>
-			</div>
-			<div class="create">
-				<div class="create_title">
-					<h1>추가하기</h1>
-				</div>
+			<div class="box_Container">
 				<div class="create_text">
 					<p class="title">
-						제목 : <input name="title" type="text" />
+						<input name="title" type="text" placeholder="제목"/>
 					</p>
 					<p class="name">
-						이름 : <input name="name" type="text" />
+						<input name="name" type="text" placeholder="아이디" />
 					</p>
 					<p class="text">
-						내용 : <input name="content" type="text" />
+						<input name="content" type="text" placeholder="내용을 입력하세요."/>
 					</p>
 				</div>
-				<div class="add_close">
-					<button class="add">추가</button>
+				<div class="btn_container">
+					<button class="positive">추가</button>
 					<button class="close">
 						<a href="Main.jsp">닫기</a>
 					</button>

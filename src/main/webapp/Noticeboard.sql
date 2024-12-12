@@ -5,6 +5,7 @@ create table notice(
 	title varchar2(200) not null,
 	name varchar2(100) not null,
 	content varchar2(2000) not null
+	created_date date default sysdate
 );
 
 insert into notice values

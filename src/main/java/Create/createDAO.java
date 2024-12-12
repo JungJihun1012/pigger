@@ -55,8 +55,8 @@ public class createDAO {
 			e.printStackTrace();
 		} finally {
 			try {
-				if (pstmt != null) pstmt.close();
-				if (conn != null) conn.close();
+				pstmt.close();
+				conn.close();
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

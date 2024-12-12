@@ -1,40 +1,3 @@
-@charset "UTF-8";
-
-* {
-	padding: 0;
-	margin: 0;
-	text-decoration: none;
-	list-style: none;
-}
-
-a {
-	color: #333333;
-}
-
-body {
-	width: 100%;
-	height: 100%;
-}
-
-.container {
-	height: 100%;
-	width: 100%;
-}
-
-.header {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 100px;
-	text-align: center;
-	background-color: #FFD700;
-}
-
-.header>h1 {
-	font-size: 40px;
-}
-
 .session {
 	display: flex;
 	flex-direction: column;
@@ -54,9 +17,10 @@ body {
 	cursor: pointer;
 	width: 120px;
 	height: 50px;
-	font-size: 25px;
+	font-size: 20px;
 	border-radius: 15px;
-	background-color: rgb(255, 234, 123);
+	background-color: #1785F2;
+	color: white;
 }
 
 .notice_board_mid {
@@ -70,29 +34,38 @@ body {
 	height: 50px;
 }
 
-.number {
+.nbm_number {
 	width: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.title {
+.nbm_title {
 	width: 200px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.name {
+.nbm_name {
 	width: 150px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.text {
-	width: 500px;
+.nbm_text {
+	width: 350px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.nbm_count {
+	width: 150px;
 	height: 50px;
 	display: flex;
 	justify-content: center;
@@ -109,21 +82,22 @@ body {
 }
 
 .update {
-	background-color: green;
+	background-color: #2FC600;
 }
 
 .delete {
-	background-color: red;
+	background-color: #E60A2F;
 }
 
 .delete, .update {
 	width: 100px;
 	height: 40px;
 	font-size: 20px;
-	border-radius: 100px;
-	cursor: pointer;
+	border-radius: 15px;
+	color: white;
 }
 
-.title>p, .title>a, .text>p, .name>p, .number>p {
+.nbm_title>p, .nbm_title>a, .nbm_text>p, .nbm_name>p, .nbm_number>p,
+	.nbm_count>p {
 	font-size: 20px;
 }
